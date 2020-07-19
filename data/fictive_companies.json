@@ -1,0 +1,11 @@
+[
+    {"name": "Pensionera", "interest": 7},
+    {"name": "Evenlife", "interest": 6.7},
+    {"name": "Glory Age", "interest": 6.1},
+    {"name": "Cuotas", "interest": 5.9},
+    {"name": "Benefit.ly", "interest": 5.5},
+    {"name": "Saldos", "interest": 5.2},
+    {"name": "Chéque", "interest": 4.8},
+    {"name": "Avoirs", "interest": 4.7},
+    {"name": "Ferie", "interest": 4.3}
+]

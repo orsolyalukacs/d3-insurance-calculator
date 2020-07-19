@@ -1,0 +1,119 @@
+<!DOCTYPE html lang="hu">
+<meta charset="utf-8">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <!-- Setting the right viewport -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>iCalc - Nyugdíjbiztosítás-kalkulátor applikáció</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/theme.min.css">
+    <!-- D3 Tooltip CSS -->
+    <link rel="stylesheet" href="css/d3-tip.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.scss">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark gradient">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Nyugdíjbiztosítás kalkulátor</a>
+        </div>
+    </nav>
+
+    <div class="container p-3">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="selections" class="row">
+                    <div class="col-md-6 left-selector">
+                        <div id="slider-div" class="box shadow">
+                            <label>Születési dátum: <span id="dateLabel"></span></label>
+                            <input type="text" autocomplete="off" id="datepicker" min="1967-01-01"
+                                max="2002-01-01" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-selector">
+                        <div id="slider-div2" class="box shadow">
+                            <label>Megtakarítás/hó: <span id="savingLabel">25000 Ft</span></label>
+                            <div id="saving-slider" class="gradient"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="barchart row box shadow">
+                    <div class="col-md-8">
+                        <div id="barchart-area">
+                            <div class="download-btn"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 selected-values shadow">
+                        <h5 id="saving-value" class="card-text"></h5>
+                    </div>
+                    <div class="col-md-12 savings-title"></div>
+                    <div class="col-md-12 cards">
+                        <div class="card-column"></div>
+                        <!-- <a class="top-link hide" id="js-top">
+                            <img class="up-arrow" src="assets/up-arrow.svg" />
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.15.5/firebase-app.js"></script>
+    <script src="/__/firebase/7.15.5/firebase-auth.js"></script>
+    <script src="/__/firebase/7.15.5/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.15.5/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <script>
+        const db = firebase.firestore();
+    </script>
+
+    <!-- D3 libraries  -->
+    <script src="//d3js.org/d3.v5.min.js"></script>
+    <script src="js/d3-tip.js"></script>
+    <script>
+        // SVG Dimension setup
+        var width = 960,
+            height = 600;
+    </script>
+    
+    <!-- External JS libraries -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.9/auth0-spa-js.production.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/barChart.js"></script>
+    <script src="js/main.js" type="module"></script>
+    <!--  Download svg -->
+    <script src="js/d3-save-svg.min.js"></script>
+</body>
+</html>

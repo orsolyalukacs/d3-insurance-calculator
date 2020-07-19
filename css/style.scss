@@ -1,0 +1,188 @@
+body {
+    background-color: #F7F9FC;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.gradient {
+    background: #000046; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1cb5e0, #000046); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1cb5e0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#barchart-area {
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+#export {
+    background-color: #1CB1DD;
+}
+
+#export:hover {
+    background-color: #0F6198;
+}
+
+.ui-datepicker-header {
+    background: #1cb5e0;
+}
+
+.ui-datepicker-title {
+    color: white;
+}
+
+
+.ui-widget-content .ui-state-default {
+    border: 0px;
+    text-align: center;
+    background: #fff;
+    font-weight: normal;
+    color: #000;
+    }
+    
+.ui-widget-content .ui-state-default:hover {
+    border: 0px;
+    text-align: center;
+    background: #000;
+    font-weight: normal;
+    color: #fff;
+}
+    
+.ui-widget-content .ui-state-active {
+    border: 0px;
+    background: #1cb5e0;
+    color: #fff;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    background: #1cb5e0;
+    border: 1px solid #000046;
+}    
+
+.ui-slider-horizontal .ui-slider-handle:hover {
+    background: #000046;
+    cursor: pointer;
+}
+   
+#slider-div2 {
+    padding: 26px 16px 40px 26px;
+}
+
+#slider-div {
+    display: flex;
+    flex-direction: column;
+}
+
+#datepicker {
+    max-width: 200px;
+}
+
+rect {
+    cursor: pointer;
+}
+
+.shadow {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 6px;
+    padding: 15px;
+    padding-bottom: 35px;
+}
+
+.box {
+    background: #fff;
+}
+
+.barchart {
+    margin-top: 15px;
+    padding: 40px 0 40px;
+}
+
+.left-selector {
+    margin-left: -15px;
+}
+
+.right-selector {
+    margin-right: -15px;
+}
+
+.tick {
+    font-size: 13px;
+}
+
+.card {
+    margin: 30px 0;
+}
+
+.cards {
+    padding: 0;
+}
+
+.enter.card {
+    border: 0px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-title {
+    font-size: 1.2rem;
+}
+
+.card-body {
+    min-height: 100px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.card-title {
+    padding-bottom: 10px;
+    max-width: 240px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.card-text {
+    color: #0D508A;
+}
+
+.selected-values {
+    background: #1cb5e0;
+    margin: 15px 0;
+    color: white;
+}
+
+.selected-body.card-title {
+    border-bottom: none;
+}
+
+.savings-title {
+    color: #444;
+    font-size: 1.6rem;
+    font-weight: 700;        
+}
+
+.up-arrow {
+    width: 50px;
+    height: 50px;
+    color: #0D508A;
+    position: fixed;
+    right: 50%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    fill: #0D508A;
+    cursor: pointer;
+    right: 0;
+}
+
+// .hide {
+//     visibility: none;
+// }

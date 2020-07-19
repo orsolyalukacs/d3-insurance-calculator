@@ -1,0 +1,26 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-nyugdijkalkulator-dev-213819-authRole",
+            "UnauthRoleArn": "arn:aws:iam::171184783810:role/amplify-nyugdijkalkulator-dev-213819-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::171184783810:role/amplify-nyugdijkalkulator-dev-213819-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-nyugdijkalkulator-dev-213819-deployment",
+            "UnauthRoleName": "amplify-nyugdijkalkulator-dev-213819-unauthRole",
+            "StackName": "amplify-nyugdijkalkulator-dev-213819",
+            "StackId": "arn:aws:cloudformation:us-east-1:171184783810:stack/amplify-nyugdijkalkulator-dev-213819/970b7c50-be68-11ea-8b5f-125caf34a739",
+            "AmplifyAppId": "d2apax7k4gznsh"
+        },
+        "categories": {
+            "auth": {
+                "nyugdijkalkulator87d7b044": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d2apax7k4gznsh",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}
