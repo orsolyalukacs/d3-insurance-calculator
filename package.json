@@ -23,7 +23,7 @@
   "dependencies": {
     "babel-loader": "^8.1.0",
     "bootstrap": "^4.5.0",
-    "firebase-admin": "^8.13.0",
+    "firebase-admin": "^11.7.0",
     "firebase-functions": "^3.7.0",
     "html-webpack-plugin": "^4.2.0",
     "node-sass": "^4.14.1",
